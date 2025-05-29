@@ -7,7 +7,7 @@ from model_utils import preprocess_input
 from rag_pipeline import get_rag_response
 
 app = Flask(__name__)
-model = joblib.load("ml_models/attention_model.pkl")  # Load your trained model
+model = joblib.load("ml_models/xgboost_model.pkl")  # Load your trained model
 
 @app.route('/predict', methods=['POST'])
 def predict():
